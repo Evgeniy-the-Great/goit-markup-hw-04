@@ -138,10 +138,24 @@ span {
   margin-right: 50px;
 }
 .email::before {
-  content: "";
+  display: inline-block;
+  content: '';
   width: 16px;
   height: 12px;
-  background-color: red;
+  margin-right: 10px;
+  background-image: url(../images/svg/envelope.svg);
+  
+}
+.phonenumber::before {
+  display: inline-block;
+  content: '';
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../images/svg/smartphone.svg);
+  background-repeat: no-repeat;
+  /* background-position: bottom; */
+  
 }
 
 /* Герой */
@@ -260,9 +274,34 @@ span {
   font-size: 14px;
   line-height: 1.63;
   margin-top: 0;
-  margin-bottom: 0;
-  
+  margin-bottom: 0; 
 }
+.ditails::before,
+.punctuality::before, 
+.planning::before, 
+.technologies::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-color: #F5F4FA;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 10px;
+}
+.ditails::before {
+  background-image: url(../images/svg/antenna.svg);
+}
+.punctuality::before {
+  background-image: url(../images/svg/clock.svg)
+}
+.planning::before {
+  background-image: url(../images/svg/diagram.svg)
+}
+.technologies::before {
+  background-image: url(../images/svg/astronaut.svg)
+}
+
+
 /* Чем мы занимаемся */
 
 
