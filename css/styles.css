@@ -356,6 +356,32 @@ span {
   margin-left: 30px;
 }
 
+.team::after {
+  display: block;
+  content: '';
+  height: 44px;
+  background-image: url(../images/svg/instagram.svg),
+  url(../images/svg/twitter.svg),
+  url(../images/svg/facebook.svg),
+  url(../images/svg/linkedin.svg);
+  background-repeat: no-repeat;
+  background-position: 
+  10px 10px, 
+  60px 10px,
+  110px 10px,
+  160px 10px;
+  background-size: 20px;
+  
+  
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 16px;
+  /* outline: 1px solid tomato; */
+  
+  
+
+}
+
 /* Подвал */
 
 footer .logo {
